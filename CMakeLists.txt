@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(Homework_11.3)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+add_library(DynLab SHARED DynLab.h DynLab.cpp)
+add_executable(Work Homework_11.3.cpp)
+target_link_libraries(Work DynLab)
